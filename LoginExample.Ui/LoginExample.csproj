@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoginExample.Interfaces\LoginExample.Interfaces.csproj" />
+    <ProjectReference Include="..\LoginExample.Managers\LoginExample.Managers.csproj" />
+    <ProjectReference Include="..\LoginExample.Repositories\LoginExample.Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LoginExample.mdf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Login\" />
+  </ItemGroup>
+
+
+
+</Project>
