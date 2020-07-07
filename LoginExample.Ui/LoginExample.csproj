@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LoginExample.Interfaces\LoginExample.Interfaces.csproj" />
     <ProjectReference Include="..\LoginExample.Managers\LoginExample.Managers.csproj" />
+    <ProjectReference Include="..\LoginExample.Models\LoginExample.Models.csproj" />
     <ProjectReference Include="..\LoginExample.Repositories\LoginExample.Repositories.csproj" />
   </ItemGroup>
 
@@ -17,7 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Login\" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
   </ItemGroup>
 
 

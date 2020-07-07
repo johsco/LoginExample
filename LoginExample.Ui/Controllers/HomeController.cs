@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using LoginExample.Interfaces.Managers;
 using LoginExample.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -18,12 +19,16 @@ namespace LoginExample.Controllers
             _userManager = userManager;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var foo = new UserLoginRequest() {UserName = "TestUser", Password = "Password123" };
-            var test = await _userManager.LoginUserAsync(foo);
+            if (HttpContext.Session.GetString("UserName") == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
 
+            ViewData["UserName"] = HttpContext.Session.GetString("UserName");
             return View();
+
         }
 
         public IActionResult Privacy()

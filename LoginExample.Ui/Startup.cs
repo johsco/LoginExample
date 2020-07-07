@@ -1,3 +1,4 @@
+using System;
 using LoginExample.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,9 +10,12 @@ namespace LoginExample
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private IWebHostEnvironment _env;
+
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            _env = env;
         }
 
         public IConfiguration Configuration { get; }
@@ -21,6 +25,24 @@ namespace LoginExample
         {
             services.AddControllersWithViews();
 
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+            //Recompiles when changing razor pages
+            if (_env.IsDevelopment())
+            {
+                services.AddRazorPages()
+                    .AddRazorRuntimeCompilation();
+            }
+            
+
+            //Di injection helper
             DiHelper.RegisterContainers(services);
         }
 
@@ -40,6 +62,8 @@ namespace LoginExample
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
