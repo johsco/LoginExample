@@ -12,7 +12,7 @@ Here is the code test. I timebox myself to 1 hour..... But i did go over by 30 m
 
 ```json
 	"ConnectionStrings": {
-		"LoginExample": "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=<b>G:\\git\\LoginExample\\LoginExample.Ui\\LoginExample.mdf</b>;Integrated Security=True"
+		"LoginExample": "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=G:\\git\\LoginExample\\LoginExample.Ui\\LoginExample.mdf;Integrated Security=True"
 	} 
 ```
 
