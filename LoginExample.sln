@@ -16,7 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C60CBEE-F4CB-4449-B014-8C606DD89C4F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		CompleteRunsettings1.runsettings = CompleteRunsettings1.runsettings
+		codeCoverage.runsettings = codeCoverage.runsettings
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -25,6 +25,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Tests.UnitTests", "Tests\LoginExample.Tests.UnitTests\LoginExample.Tests.UnitTests.csproj", "{36D8BE2B-D20A-47D4-8BE5-518D04F05B7E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Tests.AcceptanceTests", "Tests\LoginExample.Tests.AcceptanceTests\LoginExample.Tests.AcceptanceTests.csproj", "{2D70AF79-7DB2-4B95-BB9E-28EEF13762B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB0ECB43-17A7-46B7-99C9-354432C3009B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,11 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{F01B0855-6FE0-4AD5-A25D-605FB8543989} = {CB0ECB43-17A7-46B7-99C9-354432C3009B}
+		{D4CDF487-1CB3-4947-9074-FC70D5B0F201} = {CB0ECB43-17A7-46B7-99C9-354432C3009B}
+		{BD499F2F-BB68-4820-9F54-24FDBEF4B1A2} = {CB0ECB43-17A7-46B7-99C9-354432C3009B}
+		{F60A293E-0685-46E7-A080-15863A4E4938} = {CB0ECB43-17A7-46B7-99C9-354432C3009B}
+		{490F1516-6A63-4DDC-A0CC-B579B857088E} = {CB0ECB43-17A7-46B7-99C9-354432C3009B}
 		{36D8BE2B-D20A-47D4-8BE5-518D04F05B7E} = {310E086F-08B2-41D0-9AB1-CAEE14658E81}
 		{2D70AF79-7DB2-4B95-BB9E-28EEF13762B7} = {310E086F-08B2-41D0-9AB1-CAEE14658E81}
 	EndGlobalSection
