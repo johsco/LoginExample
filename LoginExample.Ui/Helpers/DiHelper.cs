@@ -16,6 +16,7 @@ namespace LoginExample.Helpers
 
             //Repositories
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ISqlHelper, SqlHelper>();
 
             //Managers
             services.AddScoped<IUserManager, UserManager>();

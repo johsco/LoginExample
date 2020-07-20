@@ -45,7 +45,7 @@ namespace LoginExample.Controllers
             }
 
 
-            HttpContext.Session.SetString("UserName", loginRequest.UserName);
+            ControllerContext.HttpContext.Session.SetString("UserName", loginRequest.UserName);
 
             return RedirectToAction("Index", "Home");
 

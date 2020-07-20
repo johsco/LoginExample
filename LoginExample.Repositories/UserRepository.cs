@@ -11,10 +11,12 @@ namespace LoginExample.Repositories
     public class UserRepository: IUserRepository
     {
         private readonly IAppSettings _appSettings;
+        private readonly ISqlHelper _sqlHelper;
 
-        public UserRepository(IAppSettings appSettings)
+        public UserRepository(IAppSettings appSettings, ISqlHelper sqlHelper)
         {
             _appSettings = appSettings;
+            _sqlHelper = sqlHelper;
         }
         public async Task<bool> LoginUserAsync(UserLoginRequest loginRequest)
         {
@@ -25,14 +27,10 @@ namespace LoginExample.Repositories
             command.Parameters.AddWithValue("userName", loginRequest.UserName);
             command.Parameters.AddWithValue("password", loginRequest.Password);
 
-            await conn.OpenAsync();
-
-            //If one exists, user and password are correct and return
-            var results = await command.ExecuteReaderAsync();
+            var results = await _sqlHelper.GetDataReaderAsync(command);
 
             //Here we would serialize data to DTO to use for UserContext. But just returning true for now.
-            return results.HasRows;
-            
+            return results.Read();
         }
     }
 }

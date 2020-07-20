@@ -26,10 +26,4 @@
     <ProjectReference Include="..\..\LoginExample.Ui\LoginExample.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Managers\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="UI\" />
-  </ItemGroup>
-
 </Project>
