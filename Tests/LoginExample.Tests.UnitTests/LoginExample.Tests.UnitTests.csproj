@@ -19,11 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LoginExample.Interfaces\LoginExample.Interfaces.csproj" />
-    <ProjectReference Include="..\..\LoginExample.Managers\LoginExample.Managers.csproj" />
-    <ProjectReference Include="..\..\LoginExample.Models\LoginExample.Models.csproj" />
-    <ProjectReference Include="..\..\LoginExample.Repositories\LoginExample.Repositories.csproj" />
-    <ProjectReference Include="..\..\LoginExample.Ui\LoginExample.csproj" />
+    <ProjectReference Include="..\..\src\LoginExample.Interfaces\LoginExample.Interfaces.csproj" />
+    <ProjectReference Include="..\..\src\LoginExample.Managers\LoginExample.Managers.csproj" />
+    <ProjectReference Include="..\..\src\LoginExample.Models\LoginExample.Models.csproj" />
+    <ProjectReference Include="..\..\src\LoginExample.Repositories\LoginExample.Repositories.csproj" />
+    <ProjectReference Include="..\..\src\LoginExample.Ui\LoginExample.csproj" />
   </ItemGroup>
 
 </Project>

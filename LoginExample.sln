@@ -3,27 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Models", "LoginExample.Models\LoginExample.Models.csproj", "{F01B0855-6FE0-4AD5-A25D-605FB8543989}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Models", "src\LoginExample.Models\LoginExample.Models.csproj", "{F01B0855-6FE0-4AD5-A25D-605FB8543989}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Interfaces", "LoginExample.Interfaces\LoginExample.Interfaces.csproj", "{D4CDF487-1CB3-4947-9074-FC70D5B0F201}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Interfaces", "src\LoginExample.Interfaces\LoginExample.Interfaces.csproj", "{D4CDF487-1CB3-4947-9074-FC70D5B0F201}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Managers", "LoginExample.Managers\LoginExample.Managers.csproj", "{BD499F2F-BB68-4820-9F54-24FDBEF4B1A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Managers", "src\LoginExample.Managers\LoginExample.Managers.csproj", "{BD499F2F-BB68-4820-9F54-24FDBEF4B1A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Repositories", "LoginExample.Repositories\LoginExample.Repositories.csproj", "{F60A293E-0685-46E7-A080-15863A4E4938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Repositories", "src\LoginExample.Repositories\LoginExample.Repositories.csproj", "{F60A293E-0685-46E7-A080-15863A4E4938}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample", "LoginExample.Ui\LoginExample.csproj", "{490F1516-6A63-4DDC-A0CC-B579B857088E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample", "src\LoginExample.Ui\LoginExample.csproj", "{490F1516-6A63-4DDC-A0CC-B579B857088E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C60CBEE-F4CB-4449-B014-8C606DD89C4F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		CompleteRunsettings1.runsettings = CompleteRunsettings1.runsettings
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{310E086F-08B2-41D0-9AB1-CAEE14658E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginExample.Tests.UnitTests", "Tests\LoginExample.Tests.UnitTests\LoginExample.Tests.UnitTests.csproj", "{36D8BE2B-D20A-47D4-8BE5-518D04F05B7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Tests.UnitTests", "Tests\LoginExample.Tests.UnitTests\LoginExample.Tests.UnitTests.csproj", "{36D8BE2B-D20A-47D4-8BE5-518D04F05B7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginExample.Tests.AcceptanceTests", "Tests\LoginExample.Tests.AcceptanceTests\LoginExample.Tests.AcceptanceTests.csproj", "{2D70AF79-7DB2-4B95-BB9E-28EEF13762B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginExample.Tests.AcceptanceTests", "Tests\LoginExample.Tests.AcceptanceTests\LoginExample.Tests.AcceptanceTests.csproj", "{2D70AF79-7DB2-4B95-BB9E-28EEF13762B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
